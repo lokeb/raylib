@@ -81,7 +81,7 @@ if(${PLATFORM} MATCHES "Desktop")
       set(OPENGL_LIBRARIES "GL")
     endif()
 
-    if ("${CMAKE_SYSTEM_NAME}" MATCHES "(Net|Open)BSD")
+    if (${CMAKE_SYSTEM_NAME} MATCHES "(Net|Open)BSD")
       find_library(OSS_LIBRARY ossaudio)
     endif()
 
